@@ -1,11 +1,16 @@
-<h1>Test Nº4</h1>
+<h1>Test Nº5</h1>
 
 <button onClick="test()">
   Clickeame
 </button>
 
+<h2>Consola</h2>
+<div id="consola"></div>
+
 <script type="text/javascript">
 	function test(){
 		window.location.href = "CuprumApp://"
+		let consola = document.getElementById("consola")
+		consola.innerHTML += "<br>Clickeado"
 	}
 </script>
