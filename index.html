@@ -1,4 +1,4 @@
-<h1>Test Nº2</h1>
+<h1>Test Nº3</h1>
 
 <button onClick="test()">
   Clickeame
@@ -6,6 +6,9 @@
 
 <script type="text/javascript">
 	function test(){
-		window.location.href = "CuprumApp://"
+		//window.location.href = "CuprumApp://"
+		fetch('CuprumApp://')
+		  .then(response => response.json())
+		  .then(data => alert(data));
 	}
 </script>
