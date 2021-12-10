@@ -9,8 +9,9 @@
 
 <script type="text/javascript">
 	function test(){
-		window.location.href = "CuprumApp://"
+		var opening = window.open("CuprumApp://")
 		let consola = document.getElementById("consola")
+		consola.innerHTML += "<br>" + opening
 		consola.innerHTML += "<br>Clickeado"
 	}
 </script>
