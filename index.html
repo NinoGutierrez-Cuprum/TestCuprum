@@ -1,4 +1,4 @@
-<h1>Test Nº6</h1>
+<h1>Test Nº7</h1>
 
 <button onClick="test()">
   Clickeame
@@ -9,12 +9,9 @@
 
 <script type="text/javascript">
 	function test(){
-		fetch('CuprumApp://')
-		  .then(response => response.json())
-		  .then(data => consola.innerHTML += "<br>"+ data);
-		//var opening = window.open("CuprumApp://")
-		//let consola = document.getElementById("consola")
-		//consola.innerHTML += "<br>" + opening
+		var opening = window.open("CuprumApp://")
+		let consola = document.getElementById("consola")
+		consola.innerHTML += "<br>" + JSON.stringify(opening)
 		consola.innerHTML += "<br>Clickeado"
 	}
 </script>
