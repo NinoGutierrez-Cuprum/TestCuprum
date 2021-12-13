@@ -1,4 +1,4 @@
-<h1>Test Nº8</h1>
+<h1>Test Nº9</h1>
 
 <button onClick="test()">
   Clickeame
@@ -12,7 +12,9 @@
 	function test(){
 		opening = window.open("CuprumApp://")
 		let consola = document.getElementById("consola")
-		consola.innerHTML += "<br>" + opening.closed
+		setTimeout(function () {
+			consola.innerHTML += "<br>" + opening.closed
+		}, 1000)
 		consola.innerHTML += "<br>Clickeado"
 	}
 </script>
