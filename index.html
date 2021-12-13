@@ -1,4 +1,4 @@
-<h1>Test Nº9</h1>
+<h1>Test Nº10</h1>
 
 <button onClick="test()">
   Clickeame
@@ -10,11 +10,13 @@
 <script type="text/javascript">
 	var opening = null;
 	function test(){
-		opening = window.open("CuprumApp://")
+		//opening = window.open("CuprumApp://")
+		console.log(document.cookie)
 		let consola = document.getElementById("consola")
-		setTimeout(function () {
-			consola.innerHTML += "<br>" + opening.closed
-		}, 1000)
+		//setTimeout(function () {
+		//	consola.innerHTML += "<br>" + opening.closed
+		//}, 1000)
 		consola.innerHTML += "<br>Clickeado"
+		consola.innerHTML += "<br>" + JSON.stringify(document.cookie)
 	}
 </script>
