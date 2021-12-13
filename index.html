@@ -8,8 +8,9 @@
 <div id="consola"></div>
 
 <script type="text/javascript">
+	var opening = null;
 	function test(){
-		var opening = window.open("CuprumApp://")
+		opening = window.open("CuprumApp://")
 		let consola = document.getElementById("consola")
 		consola.innerHTML += "<br>" + JSON.stringify(opening)
 		consola.innerHTML += "<br>Clickeado"
